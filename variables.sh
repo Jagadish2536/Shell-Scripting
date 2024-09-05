@@ -1,5 +1,6 @@
 #!/bin/bash
 
-echo "hi how are you"
-echo "I am fine what about you"
-echo "iam fine"
+PERSON1=jagadish
+PERSON2=Mahi
+
+echo "$PERSON1  hi how are you $person2"
