@@ -2,7 +2,7 @@
 
 PERSON1=jagadish
 PERSON2=Mahi
-DATE=$(PWD)
+DATE=$(pwd)
 
 
 echo "$PERSON1  hi how are you $PERSON2"
