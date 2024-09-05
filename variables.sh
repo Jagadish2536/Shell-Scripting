@@ -3,4 +3,4 @@
 PERSON1=jagadish
 PERSON2=Mahi
 
-echo "$PERSON1  hi how are you $person2"
+echo "$PERSON1  hi how are you $PERSON2"
