@@ -21,10 +21,10 @@ fi
 VALIDATE() {
     if [ $1 -ne 0 ]
     then
-        echo -e "$2 is $R failed $N"
+        echo -e "install $2 is $R failed $N"
         exit 1
     else
-        echo -e "$2 is $G sucess $N"
+        echo -e "install $2 is $G sucess $N"
     fi
 }
 
@@ -34,7 +34,7 @@ do
     if [ $? -ne 0 ]
     then
         yum install $package -y &>> $LOGFILE
-        VALIDATE $? Install of $package
+        VALIDATE $? $package
     else
         echo -e "$package is already installed $Y skip $N"
     fi
