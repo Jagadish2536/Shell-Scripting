@@ -1,0 +1,50 @@
+#!/bin/bash
+
+R="\e[31m"
+G="\e[32m"
+Y="\e[33m"
+N=\e[30m
+
+echo "Please select one of the operations below"
+echo "1. addition"
+echo "2. subtraction"
+echo "3. mul"
+echo "4. div"
+echo "5. exit"
+read adt
+
+if [ $adt -eq 1 ]
+then
+    echo "Please select the first number"
+    read num1
+    echo "Please select the second number"
+    read num2
+    ADD=$(($num1 + $num2))
+    echo -e "$R The total output is $N $G $ADD $N"
+elif [ $adt -eq 2 ]
+then
+    echo "Please select the first number"
+    read num1
+    echo "Please select the second number"
+    read num2
+    SUB=$(($num1 - $num2))
+    echo "The total output is $SUB"
+elif [ $adt -eq 3 ]
+then
+    echo "Please select the first number"
+    read num1
+    echo "Please select the second number"
+    read num2
+    SUB=$(($num1 * $num2))
+    echo "The total output is $SUB"
+elif [ $adt -eq 4 ]
+then
+    echo "Please select the first number"
+    read num1
+    echo "Please select the second number"
+    read num2
+    SUB=$(($num1 / $num2))
+    echo "The total output is $SUB"
+else
+    echo "Wrong selection"
+fi
