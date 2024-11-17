@@ -4,7 +4,7 @@ AMI=ami-0b4f379183e5706b9
 SG_ID=sg-05a6d6ae3c9b526b1
 INSTANCES=("Mongodb" "Shipping" "MySQL" "Redis" "Catalogue" "User" "cart" "Web" "Rabbitmq" "Payment" "Dispatch")
 ZONE_ID=Z09496212DQ4BR1GX50TZ
-DOMAIN_NAME=jagadish.online
+DOMAIN_NAME="jagadish.online"
 
 for i in "${INSTANCES[@]}"
 do
